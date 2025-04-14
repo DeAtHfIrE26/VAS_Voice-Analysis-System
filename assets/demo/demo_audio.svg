@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .wave {
+      animation: wave 1.5s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+    
+    @keyframes wave {
+      0% {
+        transform: scaleY(0.5);
+      }
+      100% {
+        transform: scaleY(1.0);
+      }
+    }
+    
+    .wave-1 { animation-delay: 0.0s; }
+    .wave-2 { animation-delay: 0.1s; }
+    .wave-3 { animation-delay: 0.2s; }
+    .wave-4 { animation-delay: 0.3s; }
+    .wave-5 { animation-delay: 0.4s; }
+    .wave-6 { animation-delay: 0.5s; }
+    .wave-7 { animation-delay: 0.6s; }
+  </style>
+
+  <rect x="0" y="0" width="240" height="80" fill="#f3f4f6" rx="5" ry="5" />
+  
+  <g transform="translate(40, 40)">
+    <rect class="wave wave-1" x="0" y="-30" width="15" height="60" rx="2" fill="#3b82f6" />
+    <rect class="wave wave-2" x="25" y="-30" width="15" height="60" rx="2" fill="#3b82f6" />
+    <rect class="wave wave-3" x="50" y="-30" width="15" height="60" rx="2" fill="#3b82f6" />
+    <rect class="wave wave-4" x="75" y="-30" width="15" height="60" rx="2" fill="#3b82f6" />
+    <rect class="wave wave-5" x="100" y="-30" width="15" height="60" rx="2" fill="#3b82f6" />
+    <rect class="wave wave-6" x="125" y="-30" width="15" height="60" rx="2" fill="#3b82f6" />
+    <rect class="wave wave-7" x="150" y="-30" width="15" height="60" rx="2" fill="#3b82f6" />
+  </g>
+  
+  <text x="120" y="65" text-anchor="middle" fill="#374151" font-family="Arial" font-size="12">Demo Audio</text>
+</svg>
